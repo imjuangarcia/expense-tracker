@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "normalize.css/normalize.css";
+import AppRouter from "./routers/AppRouter";
 import "./styles/style.scss";
 
-ReactDOM.render(<p>Test</p>, document.querySelector("#app"));
+ReactDOM.render(<AppRouter />, document.querySelector("#app"));

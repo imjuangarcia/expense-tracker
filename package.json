@@ -1,8 +1,8 @@
 {
-  "name": "to-do-app",
+  "name": "expense-tracker",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://gitlab.com/jmg-side-projects/todo-list-app.git",
+  "repository": "https://gitlab.com/jmg-side-projects/expense-tracker.git",
   "author": "Juan Martín García <hello@juangarcia.com.ar>",
   "license": "MIT",
   "scripts": {

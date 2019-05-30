@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the Header component 1`] = `
+<header>
+  <h1>
+    Expense Tracker
+  </h1>
+  <ul>
+    <li>
+      <NavLink
+        activeClassName="active"
+        aria-current="page"
+        exact={true}
+        to="/"
+      >
+        Dashboard
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        activeClassName="active"
+        aria-current="page"
+        exact={true}
+        to="/add"
+      >
+        Add Expense
+      </NavLink>
+    </li>
+  </ul>
+</header>
+`;

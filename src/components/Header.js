@@ -15,11 +15,6 @@ const Header = () => (
           Add Expense
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/help" exact={true} activeClassName="active">
-          Help
-        </NavLink>
-      </li>
     </ul>
   </header>
 );

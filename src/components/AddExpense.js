@@ -5,25 +5,20 @@ import { addExpense } from "../actions/expenses";
 
 export class AddExpense extends React.Component {
   onSubmit = expense => {
-    this.props.onSubmit(expense);
+    this.props.addExpense(expense);
     this.props.history.push("/");
   };
   render() {
     return (
       <section>
         <h1>Add Expense</h1>
-        <ExpenseForm
-          onSubmit={expense => {
-            this.props.onSubmit(expense);
-            this.props.history.push("/");
-          }}
-        />
+        <ExpenseForm onSubmit={this.onSubmit} />
       </section>
     );
   }
 }
 const matchDispatchToProps = dispatch => ({
-  onSubmit: expense => dispatch(addExpense(expense))
+  addExpense: expense => dispatch(addExpense(expense))
 });
 
 export default connect(

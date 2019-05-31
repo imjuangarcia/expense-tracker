@@ -2,7 +2,7 @@ import React from "react";
 import moment from "moment";
 import { SingleDatePicker } from "react-dates";
 
-class ExpenseForm extends React.Component {
+export default class ExpenseForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -90,5 +90,3 @@ class ExpenseForm extends React.Component {
     );
   }
 }
-
-export default ExpenseForm;

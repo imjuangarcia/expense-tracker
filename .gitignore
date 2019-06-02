@@ -39,3 +39,10 @@ Thumbs.db
 # node_modules #
 ######################
 node_modules/*
+
+# public files #
+######################
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map

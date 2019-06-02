@@ -2,7 +2,7 @@
 
 exports[`Should render the Expense List with empty message 1`] = `
 <section
-  class="expense-list"
+  className="expense-list"
 >
   <p>
     there aren't any expenses
@@ -12,7 +12,7 @@ exports[`Should render the Expense List with empty message 1`] = `
 
 exports[`Should render the Expense List with expenses 1`] = `
 <section
-  class="expense-list"
+  className="expense-list"
 >
   <ul>
     <ExpenseListItem

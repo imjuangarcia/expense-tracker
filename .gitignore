@@ -43,3 +43,8 @@ node_modules/*
 # public files #
 ######################
 dist/
+
+# env files #
+######################
+.env.test
+.env.development

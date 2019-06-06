@@ -26,6 +26,13 @@ exports[`Should render the Header component 1`] = `
         Add Expense
       </NavLink>
     </li>
+    <li>
+      <button
+        onClick={[Function]}
+      >
+        Logout
+      </button>
+    </li>
   </ul>
 </header>
 `;

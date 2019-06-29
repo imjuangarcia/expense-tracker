@@ -1,0 +1,20 @@
+@mixin button-solid-l {
+  background-color: $primary;
+  color: $white;
+  @include bold-default;
+  padding: 1rem;
+  min-width: 190px;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+
+  &:active {
+    top: 1px;
+    background-color: darken($primary, 20%);
+  }
+}

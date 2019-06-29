@@ -13,7 +13,7 @@ export const history = createHistory();
 
 const AppRouter = () => (
   <Router history={history}>
-    <section>
+    <React.Fragment>
       <Switch>
         <PublicRoute path="/" exact={true} component={Login} />
         <PrivateRoute path="/dashboard" component={ExpenseDashboard} />
@@ -21,7 +21,7 @@ const AppRouter = () => (
         <PrivateRoute path="/edit/:id" component={EditExpense} />
         <PublicRoute component={NotFound} />
       </Switch>
-    </section>
+    </React.Fragment>
   </Router>
 );
 

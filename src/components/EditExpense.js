@@ -14,9 +14,15 @@ export class EditExpense extends React.Component {
   };
   render() {
     return (
-      <section className="edit-expense">
+      <section className="dashboard edit-expense">
+        <section className="summary">
+          <h1>Edit {this.props.expense.description}</h1>
+          <button onClick={this.onRemove}>
+            <i className="far fa-trash-alt" />
+            Remove this expense
+          </button>
+        </section>
         <ExpenseForm expense={this.props.expense} onSubmit={this.onSubmit} />
-        <button onClick={this.onRemove}>Remove</button>
       </section>
     );
   }

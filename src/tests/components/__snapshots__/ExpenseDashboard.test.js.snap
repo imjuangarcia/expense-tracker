@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render the Expense Dashboard component 1`] = `
-<section>
+<section
+  className="dashboard"
+>
   <Connect(ExpensesSummary) />
-  <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />
 </section>
 `;

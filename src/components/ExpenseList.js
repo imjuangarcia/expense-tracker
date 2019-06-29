@@ -6,9 +6,17 @@ import selectExpenses from "../selectors/expenses";
 export const ExpenseList = props => (
   <section className="expense-list">
     {props.expenses.length === 0 ? (
-      <p>there aren't any expenses</p>
+      <section className="empty">
+        <h6 className="shrug">¯\_(ツ)_/¯</h6>
+        <p>There aren't any expenses to show</p>
+      </section>
     ) : (
       <ul>
+        <li className="header">
+          <h6>Description</h6>
+          <h6>Amount</h6>
+          <h6>Date</h6>
+        </li>
         {props.expenses.map(expense => (
           <ExpenseListItem {...expense} key={expense.id} />
         ))}

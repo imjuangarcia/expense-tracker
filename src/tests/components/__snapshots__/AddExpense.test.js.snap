@@ -1,10 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render AddExpense correctly 1`] = `
-<section>
-  <h1>
-    Add Expense
-  </h1>
+<section
+  className="dashboard add-expense"
+>
+  <section
+    className="summary"
+  >
+    <ul>
+      <li>
+        <Link
+          replace={false}
+          to="/"
+        >
+          Overview
+        </Link>
+      </li>
+      <li
+        className="active"
+      >
+        <Link
+          replace={false}
+          to="/add"
+        >
+          Add Expense
+        </Link>
+      </li>
+    </ul>
+    <h1>
+      Add Expense
+    </h1>
+  </section>
   <ExpenseForm
     onSubmit={[Function]}
   />

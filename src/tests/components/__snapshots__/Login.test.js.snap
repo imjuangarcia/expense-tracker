@@ -4,8 +4,50 @@ exports[`Should correctly render Login 1`] = `
 <section
   className="login"
 >
+  <img
+    alt="Illustration of Juan Martín García"
+    src="https://res.cloudinary.com/jmg-cursos/image/upload/v1561204460/logo/ilustracion_90px.png"
+    srcSet="https://res.cloudinary.com/jmg-cursos/image/upload/v1561204460/logo/ilustracion_90px.png 1x, https://res.cloudinary.com/jmg-cursos/image/upload/v1561204460/logo/ilustracion_90px_2x.png 2x, https://res.cloudinary.com/jmg-cursos/image/upload/v1561204460/logo/ilustracion_90px_3x.png 3x"
+  />
+  <h1>
+    Welcome, stranger
+  </h1>
+  <h3>
+    Sign in to start tracking your expenses
+  </h3>
   <button>
-    Login
+    Login with Google
   </button>
+  <p>
+    Copyright © 
+    2019
+     JMG. Designed and Developed by
+     
+    <a
+      href="https://www.juangarcia.design"
+      rel="noopener"
+      target="_blank"
+    >
+      Juan Martín García
+    </a>
+    . Hosted on
+     
+    <a
+      href="https://www.heroku.com"
+      rel="noopener"
+      target="_blank"
+    >
+      Heroku
+    </a>
+    . Code is on
+     
+    <a
+      href="https://gitlab.com/jmg-side-projects/expense-tracker"
+      rel="noopener"
+      target="_blank"
+    >
+      Gitlab
+    </a>
+  </p>
 </section>
 `;

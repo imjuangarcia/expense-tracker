@@ -1,0 +1,14 @@
+.add-expense,
+.edit-expense {
+  form {
+    p {
+      background-color: lighten($danger, 45%);
+      padding: 0.5rem;
+      @include bold-s;
+      color: $danger;
+      width: 100%;
+      margin: 0 1.5rem 1.5rem 1.5rem;
+      border-radius: 0.25rem;
+    }
+  }
+}

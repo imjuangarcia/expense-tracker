@@ -1,0 +1,46 @@
+header {
+  form {
+    display: flex;
+    align-items: center;
+
+    .input-container {
+      flex: 1;
+      border: none;
+      margin: 0 0.75rem;
+      padding: 0;
+
+      .search {
+        @include input-filters;
+      }
+    }
+    .sortBy {
+      display: flex;
+      align-items: baseline;
+
+      label {
+        margin-right: 0.5rem;
+        @include bold-default;
+        color: $text-muted;
+      }
+
+      select {
+        @include input-filters;
+      }
+    }
+
+    .date-picker {
+      flex: none;
+      flex-basis: 368px;
+
+      .DateRangePickerInput {
+        border-radius: 0.25rem;
+        box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .DateInput {
+        border-radius: 0.25rem;
+        @include regular-m;
+      }
+    }
+  }
+}

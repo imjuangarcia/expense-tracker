@@ -2,8 +2,24 @@
 
 exports[`Should render editExpense Page 1`] = `
 <section
-  className="edit-expense"
+  className="dashboard edit-expense"
 >
+  <section
+    className="summary"
+  >
+    <h1>
+      Edit 
+      Credit Card
+    </h1>
+    <button
+      onClick={[Function]}
+    >
+      <i
+        className="far fa-trash-alt"
+      />
+      Remove this expense
+    </button>
+  </section>
   <ExpenseForm
     expense={
       Object {
@@ -16,10 +32,5 @@ exports[`Should render editExpense Page 1`] = `
     }
     onSubmit={[Function]}
   />
-  <button
-    onClick={[Function]}
-  >
-    Remove
-  </button>
 </section>
 `;

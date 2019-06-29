@@ -1,0 +1,75 @@
+.add-expense,
+.edit-expense {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+
+    .input-group {
+      padding: 0 1.5rem;
+      flex: 50%;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      margin-bottom: 1.5rem;
+
+      label {
+        @include bold-default;
+        color: $text;
+        margin-bottom: 0.5rem;
+      }
+
+      input,
+      textarea {
+        @include input-forms;
+        max-height: 49px;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      .SingleDatePickerInput {
+        @include input-forms;
+
+        .DateInput {
+          width: 100%;
+          background: transparent;
+          box-sizing: border-box;
+          padding: 0;
+          @include regular-m;
+          color: $text;
+        }
+      }
+    }
+  }
+
+  .cta-container {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+
+    .link {
+      background: none;
+      border: none;
+      @include regular-m;
+      color: $text-muted;
+      cursor: pointer;
+      flex: 1;
+      text-align: left;
+
+      i {
+        margin-right: 0.5rem;
+      }
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    .cta {
+      @include button-solid-l;
+    }
+  }
+}

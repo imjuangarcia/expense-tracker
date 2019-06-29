@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+
+*,
+button,
+input,
+select {
+  font-family: "Lato", sans-serif;
+}
+
+// Headings
+
+@mixin heading-1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+@mixin heading-2 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+@mixin heading-3 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+@mixin heading-4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+@mixin heading-5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+@mixin heading-6 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+// Text
+
+@mixin lead {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@mixin paragraph {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+@mixin bold-l {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+@mixin bold-default {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+@mixin bold-m {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+@mixin bold-s {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+@mixin regular-l {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@mixin regular-default {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@mixin regular-m {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@mixin regular-s {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.6;
+}

@@ -7,12 +7,12 @@ exports[`Should render the Expense List Item with expense 1`] = `
     to="/edit/undefined"
   >
     <h3 />
+    <h5>
+      $0.00
+    </h5>
+    <h5>
+      December 31st, 1969
+    </h5>
   </Link>
-  <h5>
-    $0.00
-     -
-     
-    December 31st, 1969
-  </h5>
 </li>
 `;

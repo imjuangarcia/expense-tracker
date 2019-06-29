@@ -59,33 +59,56 @@ export default class ExpenseForm extends React.Component {
     return (
       <form onSubmit={this.addExpense}>
         {this.state.error ? <p>{this.state.error}</p> : ""}
-        <input
-          type="text"
-          placeholder="Description"
-          autoFocus
-          value={this.state.description}
-          onChange={this.changeDescription}
-        />
-        <input
-          type="text"
-          placeholder="Amount"
-          value={this.state.amount}
-          onChange={this.changeAmount}
-        />
-        <SingleDatePicker
-          date={this.state.createdAt}
-          onDateChange={this.changeDate}
-          focused={this.state.calendarFocused}
-          onFocusChange={this.changeCalendarFocus}
-          numberOfMonths={1}
-          isOutsideRange={day => false}
-        />
-        <textarea
-          placeholder="Add a note for your expense (optional)"
-          value={this.state.note}
-          onChange={this.changeNote}
-        />
-        <button>Add Expense</button>
+        <div className="input-group">
+          <label htmlFor="description">Description</label>
+          <input
+            type="text"
+            name="description"
+            placeholder="Enter Expense Description here"
+            autoFocus
+            value={this.state.description}
+            onChange={this.changeDescription}
+          />
+        </div>
+        <div className="input-group">
+          <label htmlFor="amount">Amount</label>
+          <input
+            type="text"
+            name="amount"
+            placeholder="Enter Expense Amount here"
+            value={this.state.amount}
+            onChange={this.changeAmount}
+          />
+        </div>
+        <div className="input-group">
+          <label>Payment Date</label>
+          <SingleDatePicker
+            date={this.state.createdAt}
+            onDateChange={this.changeDate}
+            focused={this.state.calendarFocused}
+            onFocusChange={this.changeCalendarFocus}
+            numberOfMonths={1}
+            isOutsideRange={day => false}
+          />
+        </div>
+        <div className="input-group">
+          <label htmlFor="notes">Notes</label>
+          <textarea
+            name="notes"
+            placeholder="Add a note for your expense (optional)"
+            value={this.state.note}
+            onChange={this.changeNote}
+          />
+        </div>
+        <div className="cta-container">
+          <button className="link">
+            <i className="fas fa-chevron-left" />
+            Back to Dashboard
+          </button>
+          <button className="cta">
+            {this.state.description ? "Edit" : "Add"} Expense
+          </button>
+        </div>
       </form>
     );
   }

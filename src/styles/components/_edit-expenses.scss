@@ -1,0 +1,27 @@
+.edit-expense {
+  .summary {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      flex: 1;
+    }
+
+    button {
+      margin-right: 1.5rem;
+      background-color: transparent;
+      border: none;
+      @include regular-m;
+      color: $danger;
+      cursor: pointer;
+
+      i {
+        margin-right: 0.5rem;
+      }
+
+      &:hover {
+        color: darken($danger, 10%);
+      }
+    }
+  }
+}

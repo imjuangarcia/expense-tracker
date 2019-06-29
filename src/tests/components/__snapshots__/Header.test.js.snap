@@ -2,33 +2,32 @@
 
 exports[`Should render the Header component 1`] = `
 <header>
-  <h1>
-    Expense Tracker
-  </h1>
+  <div
+    className="logo"
+  >
+    <Link
+      replace={false}
+      to="/dashboard"
+    >
+      <img
+        alt="Illustration of Juan Martín García. By clicking on it, you'll be redirected to the Dashboard page"
+        src="https://res.cloudinary.com/jmg-cursos/image/upload/v1561204460/logo/ilustracion_90px.png"
+        srcSet="https://res.cloudinary.com/jmg-cursos/image/upload/v1561204460/logo/ilustracion_90px.png 1x, https://res.cloudinary.com/jmg-cursos/image/upload/v1561204460/logo/ilustracion_90px_2x.png 2x, https://res.cloudinary.com/jmg-cursos/image/upload/v1561204460/logo/ilustracion_90px_3x.png 3x"
+      />
+    </Link>
+  </div>
   <ul>
     <li>
-      <NavLink
-        activeClassName="active"
-        aria-current="page"
-        to="/dashboard"
-      >
-        Dashboard
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        activeClassName="active"
-        aria-current="page"
-        to="/add"
-      >
-        Add Expense
-      </NavLink>
+      <Connect(ExpenseListFilters) />
     </li>
     <li>
       <button
+        className="logout"
         onClick={[Function]}
       >
-        Logout
+        <i
+          className="fas fa-sign-out"
+        />
       </button>
     </li>
   </ul>

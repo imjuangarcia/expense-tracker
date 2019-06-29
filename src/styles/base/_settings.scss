@@ -1,0 +1,24 @@
+// Background colors
+$light-gray: #ececee;
+
+// Text colors
+$text: #110f24;
+$text-muted: rgba(17, 15, 36, 0.4);
+$white: #ffffff;
+
+// Brand colors
+$primary: #1957f3;
+
+// Gray
+$gray-dark: #ccced0;
+$gray-medium: #ececee;
+$gray-light: #f6f6f9;
+
+// Alerts & notifications
+$success: #63ce63;
+$warning: #ffbf2f;
+$danger: #e52b20;
+
+body {
+  background-color: $light-gray;
+}

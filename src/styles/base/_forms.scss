@@ -1,0 +1,20 @@
+@mixin input-filters {
+  width: 100%;
+  border: 1px solid #cacccd;
+  @include regular-m;
+  color: $text;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  height: 50px;
+  border-radius: 0.25rem;
+  box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+@mixin input-forms {
+  background-color: $light-gray;
+  padding: 0.5rem;
+  border: 1px solid $gray-medium;
+  @include regular-m;
+  color: $text;
+  border-radius: 0.25rem;
+}

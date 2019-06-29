@@ -1,2 +1,17 @@
 @import "./base/settings";
 @import "./base/base";
+@import "./base/_typography";
+@import "./base/_buttons";
+@import "./base/_forms";
+
+@import "./components/_login";
+@import "./components/_header";
+@import "./components/_dashboard";
+@import "./components/_expenses-summary";
+@import "./components/_filters";
+@import "./components/_form";
+@import "./components/_add-expenses";
+@import "./components/_edit-expenses";
+@import "./components/_expenses";
+@import "./components/_empty";
+@import "./components/_loading";

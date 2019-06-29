@@ -1,0 +1,18 @@
+.empty {
+  text-align: center;
+
+  .shrug {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 150px;
+    font-weight: 400;
+    padding-top: 4rem;
+  }
+
+  p {
+    @include regular-m;
+    padding: 2rem 0 4rem 0;
+    color: $text-muted;
+    margin: 0;
+  }
+}

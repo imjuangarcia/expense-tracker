@@ -1,0 +1,47 @@
+.expense-list {
+  ul {
+    li {
+      padding: 0.75rem 1.5rem;
+      border-bottom: 1px solid $gray-light;
+
+      a {
+        display: flex;
+        align-items: baseline;
+
+        & > * {
+          flex: 33%;
+          margin: 0;
+        }
+
+        h3 {
+          @include regular-m;
+          color: $text;
+          word-break: break-all;
+        }
+
+        h5 {
+          @include regular-m;
+          color: $text-muted;
+          word-break: break-all;
+        }
+      }
+      &:hover {
+        background-color: $gray-light;
+      }
+    }
+    .header {
+      display: flex;
+
+      & > * {
+        flex: 33%;
+        margin: 0;
+        @include bold-s;
+        color: $text-muted;
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
